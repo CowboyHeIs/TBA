@@ -1,6 +1,3 @@
-
-#TBA Homework 1
-
 def Comb(List1, Var) :
 	try :
 		K = len(Var)
@@ -24,9 +21,9 @@ def Minus(List1, List2) :
 def Inter(List1, List2) :
 	return [x for x in List1 if x in List2] 
 
-A = ['aca', 'bb', 'c', 'caba']
-B = ['a', 'ac', 'baa', 'cbca']
-C = ['ba', 'c']
+def Show(Result, Num=10) :
+	for x in range(Num) :
+		print(Result[x])
 
 """
 Your friendly paladin here.
@@ -44,6 +41,10 @@ A&B  : Inter(A, B)
 Additional Infos :
 1. You could set the limit of the Star(A, B) by replacing B with any integer
 """
+
+A = ['aca', 'bb', 'c', 'caba']
+B = ['a', 'ac', 'baa', 'cbca']
+C = ['ba', 'c']
 
 AA = Comb(A, 2)
 print('AA Done')
