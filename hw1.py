@@ -20,6 +20,9 @@ def Union(List1, List2) :
 def Minus(List1, List2) :
 	return [x for x in List1 if x not in List2]
 
+def Inter(List1, List2) :
+	return [x for x in List1 if x in List2] 
+
 A = ['aca', 'bb', 'c', 'caba']
 B = ['a', 'ac', 'baa', 'cbca']
 C = ['ba', 'c']
@@ -30,12 +33,12 @@ Your friendly paladin here.
 Here's how to use this code.
 
 From : To
-AA  : Comb(A, 2)
-AA  : Comb(A, A)
-AB  : Comb(A, B)
-A*  : Star(A)
-AUB : Union(A, B)
-A-B : Minus(A, B)
+AA   : Comb(A, 2)
+AB   : Comb(A, B)
+A*   : Star(A)
+AUB  : Union(A, B)
+A-B  : Minus(A, B)
+A&B  : Inter(A, B)
 
 Additional Infos :
 1. You could set the limit of the Star(A, B) by replacing B with any integer
